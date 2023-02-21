@@ -1,0 +1,36 @@
+{
+  "name": "xivita-eslint-plugin",
+  "version": "1.0.1",
+  "description": "Custom Eslint rules for use in FFXIVITA Projects",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "nodemon --watch src --ext ts --exec \"npm run build || exit 1\"",
+    "test": "ts-mocha tests/**/*.spec.ts"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": "https://github.com/ffxivita/eslint-plugin",
+  "homepage": "https://github.com/ffxivita/eslint-plugin#readme",
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.43.0",
+    "micromatch": "^4.0.5",
+    "tsconfig-paths": "^4.1.0"
+  },
+  "devDependencies": {
+    "xivita-eslint-config": "^0.2.4",
+    "@types/eslint": "^8.4.10",
+    "@types/estree": "^1.0.0",
+    "@types/micromatch": "^4.0.2",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.22.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}
